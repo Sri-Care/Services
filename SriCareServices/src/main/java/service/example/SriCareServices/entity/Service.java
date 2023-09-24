@@ -21,6 +21,7 @@ public class Service {
     private Integer serviceId;
     private String serviceName;
     private Integer chargePerMonth;
+    private String ServiceDetails;
 
     @OneToMany(mappedBy = "service", cascade = CascadeType.ALL)
     private Set<UserService> userService = new HashSet<>();
