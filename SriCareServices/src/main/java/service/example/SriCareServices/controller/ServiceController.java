@@ -20,14 +20,12 @@ public class ServiceController {
 
     @PostMapping("/create")
     public Service createService(@RequestBody Service service) {
-        System.out.println("yyyyyyyyyyyy");
         Service savedService = serviceRepository.save(service);
-        return savedService; // No need to save it twice
+        return savedService;
     }
 
     @GetMapping("/servicelist")
     public List<ServiceDTO> getservicelist() {
-        System.out.println("ttttttt");
         return serviceService.serviceList();
     }
 }
