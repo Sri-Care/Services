@@ -15,7 +15,6 @@ public class ServiceJDBCDao {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     public List<ServiceDTO> getAllServices() {
-        System.out.println("eeeeeee");
         StringBuffer SQL = new StringBuffer();
         HashMap<String, Object> params = new HashMap<>();
         List<ServiceDTO> tripList = new ArrayList<>();
