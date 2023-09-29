@@ -23,6 +23,8 @@ public class UserService {
     private Integer id;
     private LocalDate subscribedDate;
     private LocalDate cancellationDate;
+
+    @Enumerated(EnumType.STRING)
     private SubscriptionStatus subscriptionStatus;
 
     @ManyToOne
